@@ -10,6 +10,6 @@ function update-ubuntu() {
   sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean
 }
 
-function folders_size() {
+function folders-size() {
   du -sk * | sort -nr | head -10
 }
