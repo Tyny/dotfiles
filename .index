@@ -1,8 +1,8 @@
-update-dotfiles() {
+pull-dotfiles() {
     cd $DOT_FILES_REPO && git pull && cd -
 }
 
-save-dotfiles() {
+push-dotfiles() {
   cd $DOT_FILES_REPO && git add . && git commit -m"update dotfiles" && git push origin master && cd -
 }
 
