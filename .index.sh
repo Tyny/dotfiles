@@ -13,3 +13,7 @@ function update-ubuntu() {
 function folders-size() {
   du -sk * | sort -nr | head -10
 }
+
+function remove_newlines() {
+  tr -d '\n' < $1
+}
