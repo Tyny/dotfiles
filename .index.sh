@@ -14,6 +14,6 @@ function folders-size() {
   du -sk * | sort -nr | head -10
 }
 
-function remove_newlines() {
+function remove-newlines() {
   tr -d '\n' < $1
 }
