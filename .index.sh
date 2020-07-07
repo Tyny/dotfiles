@@ -15,6 +15,6 @@ function folders-size() {
 }
 
 function remove-newlines() {
-  text = read
+  read text
   tr -d '\n' < $text
 }
