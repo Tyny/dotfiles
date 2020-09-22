@@ -13,3 +13,5 @@ function update-ubuntu() {
 function folders-size() {
   du -sk * | sort -nr | head -10
 }
+
+alias scrcpy="scrcpy -m 1024"
