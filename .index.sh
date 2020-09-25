@@ -15,3 +15,4 @@ function folders-size() {
 }
 
 alias scrcpy="scrcpy -m 1024"
+alias python=python3
