@@ -14,5 +14,7 @@ function folders-size() {
   du -sk * | sort -nr | head -10
 }
 
+alias ssha='eval $(ssh-agent) && ssh-add'
+
 alias scrcpy="scrcpy -m 1024"
 alias python=python3
