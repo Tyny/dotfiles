@@ -14,6 +14,20 @@ function folders-size() {
   du -sk * | sort -nr | head -10
 }
 
+function loadenv() {
+    if [ -f .env ];
+    then
+        source .env
+    fi  
+}
+
+loadenv
+
+function cd() {
+    builtin cd $@
+    loadenv                                                                                                                                                            
+}
+
 alias ssha='eval $(ssh-agent) && ssh-add'
 
 alias scrcpy="scrcpy -m 1024"
