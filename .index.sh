@@ -15,9 +15,9 @@ function folders-size() {
 }
 
 function loadenv() {
-    if [ -f .env ];
+    if [ -f .local-env.toml ];
     then
-        source .env
+        source .local-env.toml
     fi  
 }
 
