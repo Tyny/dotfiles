@@ -14,20 +14,6 @@ function folders-size() {
   du -sk * | sort -nr | head -10
 }
 
-function loadenv() {
-    if [ -f .local-env.toml ];
-    then
-        source .local-env.toml
-    fi  
-}
-
-loadenv
-
-function cd() {
-    builtin cd $@
-    loadenv                                                                                                                                                            
-}
-
 alias ssha='eval $(ssh-agent) && ssh-add'
 
 alias scrcpy="scrcpy -m 1024"
